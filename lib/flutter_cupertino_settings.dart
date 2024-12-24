@@ -39,10 +39,10 @@ typedef void SelectionCallback(int selected);
 
 TextStyle basicTextStyle(BuildContext context) =>
     (kIsWeb
-        ? Theme.of(context).textTheme.subtitle2
+        ? Theme.of(context).textTheme.bodyText2
         : Platform.isIOS
             ? CupertinoTheme.of(context).textTheme.textStyle
-            : Theme.of(context).textTheme.subtitle2) ??
+            : Theme.of(context).textTheme.bodyText2) ??
     TextStyle();
 
 class CupertinoSettings extends StatelessWidget {
